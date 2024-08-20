@@ -1,0 +1,293 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #f4f4f4;
+}
+
+.book-table-btn {
+    background: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.book-table-btn:hover {
+    background: #ff4500;
+}
+
+/* Main section styles */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    background: #f8f8f8;
+}
+
+.main-section .content {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-section .image {
+    flex: 1;
+    text-align: center;
+}
+
+.main-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Dishes section styles */
+.dishes-section {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.dishes-section h2 {
+    margin-bottom: 40px;
+}
+
+.dishes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dish-item {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+}
+
+.dish-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.dish-item h3 {
+    margin-bottom: 10px;
+}
+
+/* About section styles */
+.about-section {
+    background: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Chef section styles */
+.chef-section {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.chef-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chef-details img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+/* Testimonials section styles */
+.testimonials-section {
+    background: #f8f8f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+}
+
+.customer-info {
+    margin-top: 20px;
+}
+
+.customer-info img {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.customer-info h4 {
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+footer .newsletter {
+    flex: 1;
+    min-width: 220px;
+}
+
+footer .newsletter h3 {
+    margin-bottom: 10px;
+}
+
+footer .newsletter form {
+    display: flex;
+    gap: 10px;
+}
+
+footer .newsletter form input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer .newsletter form button {
+    padding: 10px 20px;
+    background: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .footer-links {
+    flex: 1;
+    min-width: 220px;
+}
+
+footer .footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .footer-links ul li {
+    padding: 10px 0;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .dishes-container, .chef-details, .testimonials-container {
+        flex-direction: column;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+}
